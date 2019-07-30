@@ -45,8 +45,18 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    sass: [
+      './assets/sass/base/*.sass',
+      './assets/sass/utilities/*.sass',
+      './assets/sass/utilities/grid/*.sass',
+      './assets/sass/utilities/extensions/*.sass',
+      './assets/sass/utilities/mixins/*.sass'
+    ]
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

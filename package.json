@@ -4,6 +4,7 @@
   "description": "RG third iteration",
   "author": "luketevers",
   "private": true,
+  "sasslintConfig": ".sasslintrc.json",
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
@@ -14,11 +15,14 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "sass-lint": "^1.13.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^0.2.1",
+    "@nuxtjs/style-resources": "^0.1.2",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
@@ -29,6 +33,7 @@
     "nodemon": "^1.18.9",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "sass": "^1.22.7",
     "sass-loader": "^7.1.0",
     "vue-jest": "^3.0.3"
   }
